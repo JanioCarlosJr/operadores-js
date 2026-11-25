@@ -116,13 +116,17 @@ console.log("Sobra de Cookies" ,totalCookies & capCaixaCookies)
    let idadeCliente = 22;
    let valorFreteGratis = 200
 
-   const freteGratis = valorCompraTotal >= valorFreteGratis || assinaturaPremium && enderecoRestrito;
+
+   // 1
+   const freteGratis = (valorCompraTotal >= valorFreteGratis || assinaturaPremium) && enderecoRestrito;
    console.log(freteGratis);
 
+   // 2
    const descUniversi = idade <= 29;
    console.log(descUniversi);
 
-   const areaVip = assinaturaPremium || valorCompraTotal >= 300 && cupom;
+   // 3
+   const areaVip = (assinaturaPremium || valorCompraTotal >= 300) && cupom;
    console.log(areaVip)
 
    
