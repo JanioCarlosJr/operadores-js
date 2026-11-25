@@ -107,3 +107,24 @@ console.log("Sobra de Cookies" ,totalCookies & capCaixaCookies)
    3. Acesso à área VIP: liberado para assinantes premium, ou para compras a
       partir de 300 reais que possuam cupom promocional.
    ========================================================================== */
+
+   let valorCompraTotal = 220;
+   let assinaturaPremium = false;
+   let cupom = true;
+   let enderecoRestrito = false;
+   let estudante = true;
+   let idadeCliente = 22;
+   let valorFreteGratis = 200
+
+   const freteGratis = valorCompraTotal >= valorFreteGratis || assinaturaPremium && enderecoRestrito;
+   console.log(freteGratis);
+
+   const descUniversi = idade <= 29;
+   console.log(descUniversi);
+
+   const areaVip = assinaturaPremium || valorCompraTotal >= 300 && cupom;
+   console.log(areaVip)
+
+   
+
+
