@@ -58,9 +58,32 @@ console.log("Sobra de Cookies" ,totalCookies & capCaixaCookies)
    4. O tipo do dado digitado difere do tipo esperado no banco?
    5. O saldo do cliente cobre o valor da compra?
    ========================================================================== */
+ const idade = 17;
+ let codFormulario = "100";
+ const codBanco = 100;
+ let saldoDisponivel = 250;
+ let valorCompra = 250;
 
+ const maioridadeCivil = idade >= 18;
+ const codValor = codFormulario == codBanco;
+ const codIgualidadeAbstrata = codFormulario === codBanco;
+ const saldoSuficiente = saldoDisponivel >= valorCompra;
 
+ // 1
+ console.log("Maioridade Civil: ", maioridadeCivil);
 
+ // 2 
+ console.log("Valor igual: ", codValor);
+
+ // 3
+ console.log ("Igualidade Abstrata ", codIgualidadeAbstrata);
+
+ // 4 
+ console.log("Tipo de dado Formulario: ", typeof codFormulario);
+ console.log("Tipo de dado Banco: ", typeof codBanco);
+
+ // 5
+ console.log("Saldo suficiente para a compra: ", saldoSuficiente);
 
 
 /* ==========================================================================
