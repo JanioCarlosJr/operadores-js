@@ -119,15 +119,15 @@ console.log("Sobra de Cookies" ,totalCookies & capCaixaCookies)
 
    // 1
    const freteGratis = (valorCompraTotal >= valorFreteGratis || assinaturaPremium) && enderecoRestrito;
-   console.log(freteGratis);
+   console.log("Frete grátis: ", freteGratis);
 
    // 2
    const descUniversi = idade <= 29;
-   console.log(descUniversi);
+   console.log("Desconto universitário: ", descUniversi);
 
    // 3
    const areaVip = (assinaturaPremium || valorCompraTotal >= 300) && cupom;
-   console.log(areaVip)
+   console.log("Acesso à área VIP: ", areaVip)
 
    
 
